@@ -1,4 +1,7 @@
-
+body::-webkit-scrollbar
+{
+    display: none;
+}
 
 
 *
@@ -195,7 +198,7 @@
 
 .logo_side_par
 {
-    padding: 20px 10px;
+    padding: 20px 0px;
 }
 
 .logo-sidepar
@@ -227,6 +230,9 @@
 .main_nav
 {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main_nav a
@@ -261,6 +267,15 @@
 .sidebar-quick-actions
 {
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-quick-actions h3
+{
+    align-self: self-start;
 }
 
 .sidebar_action
@@ -394,7 +409,7 @@
 
 .logo_heading
 {
-    width: 23%;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -466,7 +481,7 @@
 
 .btn_headar
 {
-    width: 40%;
+    width: 100px;
     padding: 10px 0;
     display: flex;
     justify-content: space-around;
