@@ -193,6 +193,8 @@ body::-webkit-scrollbar
     bottom: 0;
     overflow: auto;
     padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #9ca3af4d transparent;
 }
 
 
@@ -364,8 +366,7 @@ body::-webkit-scrollbar
 
     display: grid;
 
-    grid-template-columns: 16% auto 16% auto repeat(2 , 16.6%) ;
-
+    grid-template-columns: repeat(6 , 1fr);
     grid-template-areas: 
     
     "item1 item1 item1 item1 item1 item1"
@@ -1237,6 +1238,7 @@ body::-webkit-scrollbar
     display: flex;
     align-items: end;
     gap: 2px;
+    position: relative;
 }
 
 .chart_bar_income
@@ -1261,6 +1263,143 @@ body::-webkit-scrollbar
 .chart_bar_expense:hover
 {
     background-color: #F26969;
+}
+
+.after_bar_income1::after
+{
+    content: "Income: $950";
+    width: 75px;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    border: black solid 1px;
+    font-size: .7rem;
+    opacity: 0;
+    transition-delay: 0.75s;
+    border-radius: 3px;
+}
+
+.after_bar_income2::after
+{
+    content: "Income: $840";
+    width: 75px;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    border: black solid 1px;
+    font-size: .7rem;
+    opacity: 0;
+    transition-delay: 0.75s;
+    border-radius: 3px;
+}
+
+.after_bar_income3::after
+{
+    content: "Income: $1050";
+    width: 80px;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    border: black solid 1px;
+    font-size: .7rem;
+    opacity: 0;
+    transition-delay: 0.75s;
+    border-radius: 3px;
+}
+
+.after_bar_income4::after
+{
+    content: "Income: $870";
+    width: 75px;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    border: black solid 1px;
+    font-size: .7rem;
+    opacity: 0;
+    transition-delay: 0.75s;
+    border-radius: 3px;
+}
+
+.chart_bar_expense1::after
+{
+    content: "Expenses: $420";
+    width: 85px;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: black solid 1px;
+    font-size: .7rem;
+    opacity: 0;
+    transition-delay: 0.75s;
+    border-radius: 3px;
+}
+
+.chart_bar_expense2::after
+{
+    content: "Expenses: $470";
+    width: 85px;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: black solid 1px;
+    font-size: .7rem;
+    opacity: 0;
+    transition-delay: 0.75s;
+    border-radius: 3px;
+}
+
+.chart_bar_expense3::after
+{
+    content: "Expenses: $390";
+    width: 85px;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: black solid 1px;
+    font-size: .7rem;
+    opacity: 0;
+    transition-delay: 0.75s;
+    border-radius: 3px;
+}
+
+.chart_bar_expense4::after
+{
+    content: "Expenses: $580";
+    width: 85px;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: black solid 1px;
+    font-size: .7rem;
+    opacity: 0;
+    transition-delay: 0.75s;
+    border-radius: 3px;
+}
+
+.chart_bar_income:hover::after
+{
+    opacity: 1;
+}
+.chart_bar_expense:hover::after
+{
+    opacity: 1;
 }
 
 
